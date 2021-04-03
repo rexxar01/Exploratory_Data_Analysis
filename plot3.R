@@ -1,7 +1,7 @@
 # Exploratory_Data_Analysis
 Peer-graded Assignment (Week 1)
 # Importing the full dataset 
-data_full <- read.csv("E:/ExData_Plotting1/household_power_consumption.txt", header=T, sep=';', na.strings="?", nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
+data_full <- read.csv("C:/Users/Ayush/Desktop/EDA/ExData_Plotting1/household_power_consumption.txt", header=T, sep=';', na.strings="?", nrows=2075259, check.names=F, stringsAsFactors=F, comment.char="", quote='\"')
 data_full$Date <- as.Date(data_full$Date, format="%d/%m/%Y")
 # Subset the data
 data <- subset(data_full, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
